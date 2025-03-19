@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Border</title>
+  </head>
+  <style>
+    body {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 1rem 3rem;
+      background-color: #161616;
+      color: white;
+      border-image: linear-gradient(to right, #0086df, #ff01dd) 1 1 1 1; /* top right bottom left or 1 for short */
+      border-radius: 12px; /* Optional for a smoother look */
+      border-width: 12px; /* Optional for a thicker border */
+    }
+  </style>
+  <body>
+    <button>Hi!</button>
+  </body>
+</html>

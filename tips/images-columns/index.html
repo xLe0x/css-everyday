@@ -1,15 +1,26 @@
-Ever wondered how to make this?
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-![An image contains 3 columns of images](./images/images-columns.png)
+    <style>
+      .container {
+        width: min(1000px, 100%); /* not required */
+        margin: 0 auto; /* not required */
+        columns: 3 300px;
+        column-gap: 1rem;
+      }
 
-sounds hard right?
-
-not any more with `columns` property!
-
-
-let's see the result without using `columns` property 
-
-```html
+      img {
+        display: block;
+        margin-bottom: 1rem; /* to match the column gap! */
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
       <img
         width="300px"
@@ -57,45 +68,5 @@ let's see the result without using `columns` property
         alt=""
       />
     </div>
-```
-
-```css
- .container {
-    width: min(1000px, 100%); /* not required */
-    margin: 0 auto; /* not required */
-}
-```
-
-this is the result:
-
-![](./images/images-columns-bad.png)
-
-what if we added this line?
-
-```css
- .container {
-    width: min(1000px, 100%); /* not required */
-    margin: 0 auto; /* not required */
-    columns: 3 300px;
-}
-```
-
-now:
-
-![](./images/images-columns-column-added.png)
-
-gaps looks bad?
-
-use `column-gap: 1rem` to add gaps of 1rem between each column!
-
-row gaps aren't equal? remeber that images are inline elements and that means they are affected by `line-height`! [Refere to MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#styling_with_css)
-
-so we should fix this:
-
-```css
-img {
-    display: block;
-    margin-bottom: 1rem; /* to match the column gap! */
-    width: 100%;
-}
-```
+  </body>
+</html>

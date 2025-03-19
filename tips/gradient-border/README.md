@@ -1,6 +1,7 @@
-Tired of using `::before` and `::after` just to create a gradient border? There's a much easier way! 😍  
+Tired of using `::before` and `::after` just to create a gradient border? There's a much easier way! 😍
 
 ### ✨ The magic code:
+
 ```css
 button {
   border: 5px solid; /* A border is required for it to work */
@@ -9,4 +10,6 @@ button {
 }
 ```
 
-🔥 **The result?** A beautiful gradient border with zero extra elements!  
+![](../_images/gradient-border.png)
+
+🔥 **The result?** A beautiful gradient border with zero extra elements!
